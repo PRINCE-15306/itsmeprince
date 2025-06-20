@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PRINCE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
   <header class="header">
@@ -15,72 +17,134 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <button id="toggle-btn">🌙</button>
+      <button id="toggle-btn">☀️</button>
     </nav>
   </header>
 
   <section id="home" class="home">
     <div class="content">
+       <img src="profile.jpg" alt="My Profile Photo" class="profile-pic" />
       <h1>Hello, I am <span class="typing"></span></h1>
-      <p>A passionate Computer Science Engineering student from CHSRUSAT.</p>
-      <img src="profile.jpg" alt="My Profile Photo" class="profile-pic" />
+     
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am a Computer Science Engineering student at CHSRUSAT, passionate about programming, software development, and problem-solving. I love exploring new technologies and continuously improving my skills.</p>
-  </section>
+ <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="about-icon">
+      <span></span>
+    </div>
+    <div class="about-text">
+      <p>
+        I am a Computer Science Engineering student at CHSRUSAT, passionate about programming, software development, and problem-solving.<br>
+        I love exploring new technologies and continuously improving my skills.<br>
+        <span class="about-highlight">Curious    Creative    Consistent</span>
+      </p>
+    </div>
+  </div>
+</section>
 
-  <section id="skills" class="skills">
+   <section id="skills" class="skills">
     <h2>Skills & Technologies</h2>
-    <div class="skills-grid">
-      <div>⚙️ C/C++</div>
-      <div>⚙️ Python</div>
-      <div>⚙️ Java</div>
-      <div>⚙️ HTML/CSS</div>
-      <div>⚙️ JavaScript</div>
-      <div>⚙️ Git & GitHub</div>
-      <div>⚙️ Visual Studio Code</div>
-      <div>⚙️ SQL</div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>MovieFinder App</h3>
-        <p>A web app to search movies using TMDB API. Built with HTML, CSS, JS.</p>
-        <a href="https://github.com/yourusername/MovieFinder" target="_blank">View on GitHub</a>
+    <div class="skills-flex">
+      <div class="skills-box animated-skill">
+        <h3>Languages ⚙️</h3>
+        <ul class="skills-list">
+          <li><span></span> C</li>
+          <li><span></span> C++</li>
+          <li><span></span> HTML</li>
+          <li><span></span> CSS</li>
+          <li><span></span> JavaScript</li>
+        </ul>
       </div>
-      <div class="project-card">
-        <h3>To-Do List</h3>
-        <p>A beautiful task management web app.</p>
-        <a href="https://github.com/yourusername/Todo-App" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This very website - coded and designed by me!</p>
-        <a href="https://github.com/yourusername/Portfolio" target="_blank">View on GitHub</a>
+      <div class="skills-box animated-skill">
+        <h3>Technologies🛠️</h3>
+        <ul class="skills-list">
+          <li><span></span> Git </li>
+          <li><span></span> GitHub</li>
+          <li><span></span> Visual Studio Code</li>
+          <li><span></span> AutoCAD</li>
+          <li><span></span> Linux</li>
+          
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>I'd love to hear from you! Feel free to send a message.</p>
-    <form action="#" method="POST" class="contact-form">
+ <section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="imagesmoviefinder.jpg" alt="MovieFinder App Screenshot" class="project-img" />
+      <h3>MovieFinder Website</h3>
+      <p>A website to search movies using TMDB API. Built with HTML, CSS, JS.</p>
+      <a href="https://github.com/hetpatel7567/Moviefinder" target="_blank">
+        <button class="project-btn">View on GitHub</button>
+      </a>
+      
+    </div>
+    <div class="project-card">
+      <img src="fun.jpg" alt="To-Do List Screenshot" class="project-img" />
+      <h3>Fun With Friend</h3>
+      <p>A beautiful Website that You can prank with your Best Friend and enjoy a lot.</p>
+      <a href="https://github.com/PRINCE-15306/FUN" target="_blank">
+        <button class="project-btn">View on GitHub</button>
+      </a>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-flex">
+    <!-- Left: Message & Social -->
+    <div class="contact-info">
+      <div class="contact-intro">
+        <span style="font-size:1.3em; color:var(--accent-color); font-weight:600;">Let's Connect!</span><br>
+        Whether you have a question, an opportunity, or just want to say hello,<br>
+        <span style="color:var(--typing-color);">I’d love to hear from you.</span> <br>
+        <span style="opacity:0.8;">Drop me a message and I’ll get back to you soon!</span>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href="https://github.com/PRINCE-15306" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/patel-prince-jitendrakumar-6412a9334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+         <li>
+    <a href="https://www.instagram.com/princepatel_1506/" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+        <li>
+          <a href="mailto:princeptel15306a@email.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+   
+    <form action="#" method="POST" class="contact-form" onsubmit="showContactMessage(event)">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <input type="text" placeholder="Subject" required />
       <textarea placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
+  </div>
+  <div id="contact-message" class="contact-message"></div>
+</section>
 
   <footer class="footer">
-    <p>&copy; 2025 MyPortfolio | Designed by [Your Name] | All Rights Reserved</p>
+    <p>&copy; 2025 | Designed by Prince | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
