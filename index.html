@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRINCE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">PRINCE</div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-btn">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="content">
+      <h1>Hello, I am <span class="typing"></span></h1>
+      <p>A passionate Computer Science Engineering student from CHSRUSAT.</p>
+      <img src="profile.jpg" alt="My Profile Photo" class="profile-pic" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science Engineering student at CHSRUSAT, passionate about programming, software development, and problem-solving. I love exploring new technologies and continuously improving my skills.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div>⚙️ C/C++</div>
+      <div>⚙️ Python</div>
+      <div>⚙️ Java</div>
+      <div>⚙️ HTML/CSS</div>
+      <div>⚙️ JavaScript</div>
+      <div>⚙️ Git & GitHub</div>
+      <div>⚙️ Visual Studio Code</div>
+      <div>⚙️ SQL</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>MovieFinder App</h3>
+        <p>A web app to search movies using TMDB API. Built with HTML, CSS, JS.</p>
+        <a href="https://github.com/yourusername/MovieFinder" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do List</h3>
+        <p>A beautiful task management web app.</p>
+        <a href="https://github.com/yourusername/Todo-App" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This very website - coded and designed by me!</p>
+        <a href="https://github.com/yourusername/Portfolio" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Feel free to send a message.</p>
+    <form action="#" method="POST" class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 MyPortfolio | Designed by [Your Name] | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
